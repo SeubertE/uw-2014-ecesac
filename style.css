@@ -1,0 +1,170 @@
+/*
+ Theme Name:   UW ECE SAC Theme
+ Description:  UW-2014-master Child Theme
+ Author:       Eugene Seubert
+ Author URI:   https://seuberte.com
+ Template:     uw-2014-master
+*/
+
+/* Change from UW to ECE logos and invert Dawgsdrop*/
+.uw-thinstrip {
+	background: #ffffff;
+}
+
+.uw-thinstrip .uw-wordmark {
+	top: -22px;
+	height: 90px;
+	width: 440px;
+	display: block;
+	position: absolute;
+	background-image: url(assets/svg/ece_logo.svg);
+	background-position: 0% 0%;
+	background-size: contain;
+}
+
+.uw-thinstrip .uw-patch {
+	display: block;
+	text-indent: -9999px;
+	width: 163px;
+	height: 90px;
+	background: url(assets/svg/uw-sprite-inv.svg) no-repeat 0 0 transparent;
+	position: absolute;
+	top: -22px;
+	left: 0;
+	z-index: 1;
+}
+
+.uw-container .uw-container-inner .uw-thinstrip .uw-thin-strip-nav {
+	visibility: hidden;
+}
+
+.uw-thinstrip ul.uw-thin-links li a{
+	color: #4b2e83;
+}
+
+#dawgdrops {
+	background-color: #4b2e83;
+}
+
+.dawgdrops-item.dawgdrops-item a{
+	color: #ffffff;
+}
+
+button.uw-search {
+	background-color: #4b2e83 !important;
+}
+
+.dawgdrops-item a.dropdown-toggle:before {
+	background: url(assets/svg/uw-sprite-inv.svg) no-repeat -353px 0px;
+}
+
+/* Uses ECE Circuit Banner for Title Bar */
+/* Orginal Site Title bar is disabled */
+#sac-titlebar {
+	background-image: url(assets/circuit-banner.png);
+}
+
+#sac-titlebar h1{
+	color: white;
+	font-family: "Encode Sans"
+}
+
+#mobile-relative button.uw-mobile-menu-toggle {
+	color: white;
+}
+
+.dawgdrops-item.dawgdrops-item li a{
+	color: #707070;
+}
+
+
+/* For Dawgsdrops and Site title */
+
+/* Large Screens*/
+@media only screen and (min-width: 1200px){
+	#sac-titlebar h1{
+		width: 1170px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 0;
+		margin-bottom: 0px;
+		
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+/* Medium Screens */
+@media only screen and (max-width: 1199px) {
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
+        .uw-thinstrip ul.uw-thin-links:before {
+            background-color: #ffffff;
+        }
+    }
+
+    #sac-titlebar h1{
+		width: 700px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 0;
+		margin-bottom: 0px;
+		
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+/* Small Screens */
+@media only screen and (max-width: 768px) {
+    .uw-thinstrip .uw-patch {
+		width: 73px;
+		height: 45px;
+		top: 0;
+		left: 0;
+		transition: all 0s;
+		background-size: 470px !important;
+	}
+    
+	.uw-thinstrip .uw-wordmark {
+		background-image: url(assets/svg/ece_logo.svg) no-repeat 0 -185px transparent;
+		display: block;
+		top: 0;
+		height: 46px;
+		width: 224px;
+		margin: 0;
+		float: none;
+		left: 78px;
+		position: absolute;
+		background-position: 0% 0%;
+		background-size: contain;
+	}
+
+	#sac-titlebar h1{
+		font-size: 25px;
+		width: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+		
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	
+	#mobile-relative.frontpage button.uw-mobile-menu-toggle {
+		top: -40px;
+		right: 10px;
+	}
+	
+	#mobile-relative.frontpage ul.uw-mobile-menu {
+		margin-bottom: 0;
+	}
+}
+
+/* Super Small Screens */
+@media only screen and (max-width: 600px) {
+	#sac-titlebar h1{
+		font-size: 25px;
+		width: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
